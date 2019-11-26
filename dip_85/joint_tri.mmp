@@ -1,0 +1,10 @@
+GeoSys-MMP  Material Medium Properties ------------------------------------
+#MEDIUM_PROPERTIES
+ $GEOMETRY_DIMENSION
+  3
+ $POROSITY
+  1  0.11
+ $PERMEABILITY_TENSOR
+ ISOTROPIC  1e-10
+
+#STOP
