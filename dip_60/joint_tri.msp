@@ -1,0 +1,31 @@
+GeoSys-MAT-SP: Solid Properties ------------------------------------
+#SOLID_PROPERTIES // fault
+  $DENSITY
+1 -2300.
+ 
+  $ELASTICITY
+    POISSION   0.21621621621621612
+    YOUNGS_MODULUS
+      1 170270270.27027026
+ $BIOT_CONSTANT
+  1.00000000
+
+ $PLASTICITY
+   MOHR-COULOMB  
+   2.e3         //cohesion
+   40           //friction angle
+   0.0          //dilation angle         
+   1.e16        //tensile strength
+   0            //curve number for strain hardening of cohesion
+   0            //curve number for strain hardening of friction angle 
+ $WEAKNESS_PLANE
+  MICRO_STRUCTURE_TENSOR 1 1 1  //no microstruct 
+  WEAKPLANE_NORM 0 0.866025404 0.5 //bedding planes (BEDDING_NORM still recognized)
+   1.e3         //cohesion
+   30           //friction angle
+   0.0          //dilation angle         
+   1.e16        //tensile strength
+   0            //curve number for strain hardening of cohesion
+   0            //curve number for strain hardening of friction angle   
+
+#STOP
